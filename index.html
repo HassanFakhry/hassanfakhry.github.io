@@ -246,6 +246,9 @@ h2 em{font-style:normal;color:var(--gold-hi)}
 .longlist .cols p{font-size:1rem;line-height:1.6;color:var(--dim);margin-bottom:1.2rem;break-inside:avoid}
 .longlist .cols b{font-family:var(--head);font-weight:600;font-size:.74rem;letter-spacing:.14em;text-transform:uppercase;color:var(--gold-hi);margin-right:.4rem}
 @media(max-width:900px){.longlist{padding:3.5rem 1.3rem}.longlist .cols{columns:1}}
+
+.since{font-variant-numeric:tabular-nums;color:var(--gold-hi)}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
 </style>
 </head>
 <body>
@@ -336,10 +339,10 @@ h2 em{font-style:normal;color:var(--gold-hi)}
   <div class="wrap duo flip">
     <div class="tale">
       <h2 class="reveal">A camera, some math, and a <em>number I can't see myself.</em></h2>
-      <p class="reveal">Every project I care about has the same move in it. Point a camera at something, get a number out. In the gym that number is a knee angle. In a lab at OHSU it's a blood vessel.</p>
-      <p class="reveal">I didn't know anyone at OHSU's Casey Eye Institute. About seven months ago I cold emailed Dr. Huang, and he wrote back. I started in the lab in June, and recently I got promoted to research assistant.</p>
-      <p class="reveal">How thick a vessel's wall is compared to its opening says a lot about cardiovascular risk, and the retina is one of the only places you can see vessels without cutting anyone open. Working with Dr. Ou Tan and Dr. Huang, I'm teaching a model to find the wall and the opening in Doppler OCT scans and measure that ratio on its own.</p>
-      <p class="reveal">To teach it, I hand-annotated 300+ vessels and wrote the grading protocol. On scans it had never seen, it hits 0.89 Dice. The data's unpublished, so there are no real scans on this page. Play with an invented vessel instead.</p>
+      <p class="reveal">Every project I care about has the same move in it: point a camera at something and get a number out. In the gym, the number is a knee angle. In a lab at OHSU, it's the ratio of a retinal vessel's wall thickness to its opening.</p>
+      <p class="reveal">I didn't know anyone at OHSU's Casey Eye Institute. On March 19 I cold emailed Dr. Huang, and that was <span class="since" id="since" aria-hidden="true">7 months, 19 days, 0 hours, 0 minutes, 0 seconds</span><span class="sr" id="sinceSr">seven months</span> ago. I got his reply at a speech and debate tournament where I narrowly missed qualifying for nationals and ended up as an alternate, which made that loss feel way less personal. I joined the lab in June, and it was supposed to end in August. It's been extended four times now, it runs through at least the start of my senior year, and I was recently promoted to research assistant.</p>
+      <p class="reveal">The retina is one of the only places a doctor can look at your blood vessels without surgery, and how thick a vessel's wall is compared to its opening is a marker of cardiovascular disease. Measuring it today takes specialized equipment and a lot of manual work. The project I'm part of, with Dr. Ou Tan and Dr. Huang, is trying to make that measurement automatic.</p>
+      <p class="reveal">The goal is a quick vessel check at any doctor's visit, like having your blood pressure taken. Cardiovascular disease killed an estimated 19.8 million people worldwide in 2022, about 32% of all deaths, and 85% of those deaths were heart attacks and strokes. In the U.S., someone dies of it every 34 seconds. The data's unpublished, so there are no real scans on this page. Play with an invented vessel instead.</p>
     </div>
     <div class="lab reveal d1" id="lab">
       <canvas id="vessel" width="128" height="128" role="img" aria-label="Cross-section of an invented blood vessel: a dark center called the lumen, surrounded by a brighter wall."></canvas>
@@ -356,7 +359,7 @@ h2 em{font-style:normal;color:var(--gold-hi)}
     <div class="mini reveal"><canvas data-scene="robot" width="120" height="80" aria-hidden="true"></canvas><span>where the robot thinks it is</span></div>
     <div class="tale">
       <h2 class="reveal">Robots, and who gets <em>to build them.</em></h2>
-      <p class="reveal">I'm on FTC Team 18108, High Voltage. Last season I co-wrote our autonomous with Hermite splines and was Drive Coach for every match, and we made the playoff bracket at Worlds. On the software side the thing I care about is localization, getting the robot to know where it is on the field.</p>
+      <p class="reveal">I'm the software lead on FTC Team 18108, High Voltage. Last season we made the playoff bracket at Worlds. On the software side, the thing I care about is localization, getting the robot to know where it is on the field.</p>
       <p class="reveal">This season I noticed tasks kept falling between sub-teams, so I wrote a proposal for an Operations role. The head coach approved it, and now I run it. <a href="https://www.highvoltageftc.com/" target="_blank" rel="noopener">highvoltageftc.com</a></p>
       <p class="reveal">Outside the team, I got picked as a 4-H representative to talk with Oregon State Senator Lisa Reynolds about getting robotics into underserved schools. I teach coding and robotics to Latino kids through Bienestar de la Familia, and I ran a booth at Girl Scouts STEM Day for 3,000+ scouts. That's 114+ volunteer hours so far.</p>
     </div>
@@ -372,37 +375,12 @@ h2 em{font-style:normal;color:var(--gold-hi)}
   </div>
 </section>
 
-<section id="school" class="chap">
-  <div class="wrap duo">
-    <div class="seal reveal" role="img" aria-label="GPA 3.96 unweighted, 4.04 weighted"><b>3.96</b><span>GPA<br>unweighted</span><small>4.04 weighted</small></div>
-    <div class="tale">
-      <h2 class="reveal">The grades, <em>since you'll ask.</em></h2>
-      <p class="reveal">I'm a junior at Sunset High School in Portland, Class of 2028, on the full IB and dual-credit track. I took college programming logic as a sophomore and I'm two years ahead in math. My only non-A in high school was AGS III Math, freshman year.</p>
-    </div>
-  </div>
-</section>
-
 <section id="resume" class="chap resume">
   <div class="wrap">
     <h2 class="reveal">The rest is <em>on paper.</em></h2>
     <div class="scroll reveal">
       <iframe src="https://drive.google.com/file/d/1dR3dBPasy8C6nXolEcNzv5Cdv0dIwMuT/preview" title="Hassan Fakhry's resume" loading="lazy"></iframe>
       <div class="acts"><a class="btn" href="https://drive.google.com/file/d/1dR3dBPasy8C6nXolEcNzv5Cdv0dIwMuT/view?usp=sharing" target="_blank" rel="noopener">View resume</a></div>
-    </div>
-  </div>
-</section>
-<section id="long" class="longlist">
-  <div class="wrap">
-    <h2 class="reveal">The long list.</h2>
-    <p class="intro reveal">Everything else, in no particular order, for the completionists.</p>
-    <div class="cols reveal">
-      <p><b>Built.</b> SetBuddy AI, live on iOS and Google Play. <a href="https://tryschedulebuddy.com" target="_blank" rel="noopener">ScheduleBuddy</a>, an on-device iOS app that turns recordings into calendar events. A retinal vessel segmentation pipeline at OHSU. <a href="https://bridge-city-draft.vercel.app/" target="_blank" rel="noopener">A site for Bridge City Cleaners</a>, with scheduling, quote requests, and Firebase auth. <a href="https://hassanfakhry.github.io/HealthBuddy/" target="_blank" rel="noopener">The demo site for a DECA ICDC Top 10 team</a>. <a href="https://github.com/HassanFakhry/me" target="_blank" rel="noopener">This site</a>, hand-coded, no templates.</p>
-      <p><b>Won and placed.</b> Top 70 of 336 at the FTC World Championship playoffs, 2026. 5th nationally at the Governor's Cup Invitational, as the one Oregon team the Governor selected. HOSA Biomedical Debate state champion, then international semifinalist, 16th of ~200 in qualifying. USACO Silver, promoted on the first attempt after finishing all of Bronze. Speech &amp; Debate national qualifier (alternate): 1st in Parliamentary, 1st team sweepstakes, 3rd top speaker. 4th in Electric Vehicle at State Science Olympiad, out of 30 entries. FTC 1st Place Connect Award (State) and 2nd Place Inspire Award (League).</p>
-      <p><b>Gave time to.</b> 114+ hours as a volunteer STEM instructor. Bienestar de la Familia. A Girl Scouts STEM Day booth for 3,000+ scouts. The host team for the Hillsboro FTC Qualifier. A conversation with Oregon State Senator Lisa Reynolds as a 4-H representative.</p>
-      <p><b>Made.</b> A YouTube channel, December 2021 to December 2024: 5K+ subscribers, 1.2M+ views, and client thumbnails, one of which drove 650K+ views.</p>
-      <p><b>Took.</b> IB Math HL (Calc 1 &amp; 2 for dual credit), IB Biology HL, IB Economics SL, IB History SL, IB Language &amp; Literature SL, IB French SL, dual-credit C++ &amp; Data Structures. Before that, PSU Programming Logic &amp; Design, Honors Pre-Calculus, STEM Chemistry, STEM Physics, Web Design 1 &amp; 2, and AGS III Math.</p>
-      <p><b>Reach for.</b> Python, C++, Java, JavaScript, PyTorch, nnU-Net v2, TensorFlow, MediaPipe, OpenCV, NumPy, pandas, scikit-learn, React, React Native, Node.js, Firebase, HTML/CSS, ImageJ/Fiji, Git.</p>
-      <p><b>From.</b> Findley Elementary, Tumwater Middle School, and Sunset High School, all in Portland, Oregon. English (fluent), French (conversational), Arabic (basic).</p>
     </div>
   </div>
 </section>
@@ -655,6 +633,16 @@ if(!RM){setTimeout(lock,1200);setInterval(function(){var r=shot.getBoundingClien
 /* timer */
 var s=0,el=d.getElementById('timer');function fmt(n){var m=Math.floor(n/60),r=n%60;return m?m+'m '+r+'s':r+'s'}
 setInterval(function(){s++;el.textContent=s<60?'Time invested: '+fmt(s):s<300?'Still here after '+fmt(s)+'?':fmt(s)+' in. Go build something.'},1000);
+/* live time since the cold email (March 19, 2026) */
+var sn=d.getElementById('since'),snr=d.getElementById('sinceSr');
+if(sn){var st=new Date(2026,2,19,0,0,0);
+ function pl(n,u){return n+' '+u+(n===1?'':'s')}
+ function tick(){var nw=new Date(),m=(nw.getFullYear()-st.getFullYear())*12+nw.getMonth()-st.getMonth();
+  var an=new Date(st.getFullYear(),st.getMonth()+m,st.getDate(),0,0,0);if(an>nw){m--;an=new Date(st.getFullYear(),st.getMonth()+m,st.getDate(),0,0,0)}
+  var ms=Math.max(0,nw-an),dd=Math.floor(ms/864e5);ms-=dd*864e5;var hh=Math.floor(ms/36e5);ms-=hh*36e5;var mi=Math.floor(ms/6e4);ms-=mi*6e4;var ss=Math.floor(ms/1e3);
+  sn.textContent=[pl(m,'month'),pl(dd,'day'),pl(hh,'hour'),pl(mi,'minute'),pl(ss,'second')].join(', ');
+  if(snr&&snr.dataset.m!==String(m)){snr.dataset.m=m;snr.textContent=pl(m,'month')}}
+ tick();setInterval(tick,1000)}
 /* retina sketch */
 var cv=d.getElementById('vessel'),vx=cv.getContext('2d'),N=128,cxv=64,cyv=64,LR=26;
 var wr=d.getElementById('wall'),mk=d.getElementById('mask'),rt=d.getElementById('ratio');
